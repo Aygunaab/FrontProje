@@ -1,3 +1,7 @@
+
+
+
+
 $(document).ready(function() {
 	$('.count-num').counterUp({
 		delay: 10,
@@ -102,3 +106,24 @@ $('.logo-slider').slick({
 		}
 	]
 });
+
+$("#sidebar-btn").click(function(){
+	$(".sidebar-menu").addClass("sidebar-menu-active");
+  });
+  $(".sidebar-close").click(function(){
+	$(".sidebar-menu").removeClass("sidebar-menu-active");
+  });
+  
+  $(".sidebar-slide").click(function(){
+	var dataCategory=$(this).data("category")
+  $(".sidebar").addClass(".sidebar-inactive");
+   $(".sidebar-inner").each((function(){
+   $(this).data("value")===dataCategory && $(this).addClass("sidebar-inner-active");
+   }))
+});
+
+  $(".sidebar-back").click(function(){
+	$(".sidebar-inner").removeClass("sidebar-inner-active");
+	$(".sidebar").removeClass(".sidebar-inactive");
+  });
+ 

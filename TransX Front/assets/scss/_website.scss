@@ -3,7 +3,6 @@
 .banner {
 	position: relative;
 	color: $color-white;
-	width: 100%;
 	.banner-layout {
 		position: absolute;
 		height: 100%;
@@ -29,16 +28,20 @@
 		display: table;
 		width: 100%;
 		.content {
-			padding: 170px 88px 120px 0;
+			position: absolute;
+			padding: 150px 0 120px 0;
+			top: 24%;
+			left:5%;
+
 		}
 		.banner-title {
 			margin-bottom: 25px;
-			font-size: 55px;
+			font-size: 50px;
 			font-weight: 700;
 			line-height: 60px;
 		}
 		.button {
-			z-index: 999;
+		
 			position: absolute;
 		}
 	}

@@ -118,10 +118,9 @@
 			text-decoration: underline !important;
 		}
 	}
-	.nav {
-		.nav-link {
-			color: $color-white !important;
-			font-size: 18px;
+	.socials {
+		@media only screen and (min-width: 992px) {
+			padding-bottom: 9px;
 		}
 	}
 }

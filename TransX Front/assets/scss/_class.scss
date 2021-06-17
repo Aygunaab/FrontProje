@@ -1,12 +1,13 @@
 body {
-	font-family: $primary-font;
+	font-family: 'Inter', sans-serif;
 	color: #414a53;
 	min-height: 100vh;
 	overflow-x: hidden;
 	display: flex;
 	font-size: 16px;
 	line-height: 1.6;
-	margin: 0%;
+	margin: 0;
+	padding: 0;
 }
 
 a {
@@ -91,7 +92,6 @@ img {
 
 //class
 .page-wrapper {
-	flex: 1 1 auto;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -128,6 +128,7 @@ img {
 	appearance: none;
 	transition: all .3s;
 }
+// background img style
 .bg-img {
 	position: absolute;
 	top: 0;
@@ -137,6 +138,17 @@ img {
 	object-fit: cover;
 	object-position: top center;
 	z-index: -1;
+}
+.contact-bg {
+	position: absolute;
+	top: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: -1;
+}
+.section-bg-img {
+	position: absolute;
+	z-index: 0;
 }
 .icon {
 	display: inline-block;
@@ -150,9 +162,25 @@ img {
 	margin-bottom: 50px;
 	min-width: 230px;
 }
-section {
+//section style class
+.section-style {
 	padding: 130px 0 130px 0;
 }
+.section-style-two {
+	position: relative;
+	z-index: 0;
+	padding: 70px 0;
+	@media only screen and (min-width: 768px) {
+		padding: 90px 0;
+	}
+	@media only screen and (min-width: 992px) {
+		padding: 120px 0;
+	}
+	@media only screen and (min-width: 1200px) {
+		padding: 140px 0;
+	}
+}
+
 //color class
 .green-color {
 	color: $primary-color;
@@ -162,6 +190,9 @@ section {
 }
 .bg-ligray {
 	background-color: $bg-lgray;
+}
+.bg-darkgray {
+	background: #31373f;
 }
 
 //button style
@@ -365,18 +396,190 @@ section {
 		-webkit-text-stroke-color: #d6d6d6;
 	}
 }
+.title-white {
+	color: $color-white !important;
+}
 
 //margin class
-.marbot-40 {
-	margin-bottom: 40px !important;
+.martop-100 {
+	margin-top: 100px !important;
 }
 .marbot-70 {
-	margin-bottom: 70px !important;
+	margin-bottom: 50px !important;
+	@media only screen and (min-width: 992px) {
+		margin-bottom: 70px !important;
+	}
+}
+.martop-70 {
+	margin-top: 70px;
+}
+.maroffset-50 {
+	margin-bottom: -50px !important;
+}
+.top-50 {
+	top: 50%;
+	bottom: auto;
+	transform: translateY(-50%);
+}
+.right-0 {
+	right: 0;
 }
 
 //table
 .bg-table-blue {
-	color: #fff;
+	color: $color-white;
 	background: #003d90;
 	border: none;
+}
+
+//social class
+.socials {
+	display: inline-flex;
+	.socials-item {
+		margin-right: 20px;
+		.socials-link {
+			color: #fff;
+			font-size: 20px;
+			line-height: 1;
+			transition: color .3s;
+			&:hover {
+				color: $primary-color !important;
+			}
+		}
+		&:not(:last-of-type) {
+			margin-right: 20px;
+		}
+	}
+}
+.socials-dark {
+	.socials-link {
+		color: $title-color !important;
+		&:hover {
+			color: $primary-color !important;
+		}
+	}
+}
+
+//burger-btn
+#sidebar-btn {
+	display: inline-block;
+	vertical-align: middle;
+	width: 30px;
+	height: 15px;
+	cursor: pointer;
+	margin: 38px;
+	top: 0;
+
+	span {
+		height: 2px;
+		background: $color-white;
+		margin-bottom: 5px;
+		display: block;
+		&:nth-child(2) {
+			width: 80%;
+		}
+		&:nth-child(3) {
+			width: 70%;
+			margin-left: 9px;
+		}
+	}
+}
+
+//testimonials
+.test-style-two {
+	position: relative;
+
+	.quote {
+		display: none;
+		position: absolute;
+		top: -28px;
+		left: -19px;
+		z-index: 0;
+		@media only screen and (min-width: 992px) {
+			display: initial;
+		}
+	}
+	.title-style-one {
+		color: $title-color;
+		.title {
+			color: $title-color;
+			font-weight: $primary-font-weight;
+		}
+	}
+	.test-slider {
+		.slider-card {
+			.slider-content {
+				font-size: 15px;
+				color: $title-color;
+				.test-author {
+					margin-top: 40px;
+					img {
+						position: absolute;
+					}
+					h6 {
+						font-weight: 700;
+					}
+					span {
+						color: $title-color;
+					}
+				}
+			}
+		}
+	}
+	.slick-dots {
+		display: inline-flex;
+		padding: 20px 0 40px 0;
+		li {
+			position: relative;
+			padding: 15px 0 15px 0;
+			list-style: none;
+			margin-right: 8px;
+			cursor: pointer;
+			width: 57px !important;
+			transition: all .3s;
+			line-height: initial;
+			&:hover {
+				button {
+					background-color: #00997d;
+					height: 5px;
+					top: 11px;
+				}
+			}
+			&.slick-active {
+				button {
+					background-color: #00997d;
+					height: 5px;
+					top: 11px;
+				}
+			}
+			button {
+				position: absolute;
+				top: 15px;
+				left: 0;
+				font-size: 0;
+				height: 1px;
+				width: 57px;
+				padding: 0;
+				border: none;
+				outline: 0;
+				background-color: #ddd;
+				transition: all .3s;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.servicestyle-two {
+	&::after {
+		content: "";
+		display: block;
+		height: 120px;
+		width: 100%;
+		background: #31373f;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+	}
 }
