@@ -9,17 +9,12 @@
 	z-index: 2;
 	min-height: 70px;
 	transition: all .3s;
-	.button-style-one {
-		display: none;
-		@media only screen and (min-width: 768px) {
-			display: inline-block;
-		}
-	}
+
 	.navbar-top {
 		position: relative;
 		padding: 9px 0 8px 0;
 		color: $color-white !important;
-		font-size: 14px;
+		font-size: 13px;
 		min-height: 42px;
 		width: 100%;
 		&::after {
@@ -62,7 +57,12 @@
 
 	.logo {
 		margin-top: 28px;
-		@media only screen and (min-width: 768px) {
+		margin-left: 50px;
+
+		@media only screen and (max-width: 768px) {
+			margin-left: 50px;
+		}
+		@media only screen and (max-width: 576px) {
 			margin-left: 30px;
 		}
 		a,
@@ -98,17 +98,18 @@
 		position: relative;
 		&:not(:last-of-type) {
 			margin-right: 10px;
-			&:hover {
-				.nav-sub-list {
-					opacity: 1;
-					transform: translateY(0);
-					visibility: visible;
-				}
-			}
-			@media only screen and (min-width: 1200px) {
-				margin-right: 25px;
+		}
+		&:hover {
+			.nav-sub-list {
+				opacity: 1;
+				transform: translateY(0);
+				visibility: visible;
 			}
 		}
+		@media only screen and (min-width: 1200px) {
+			margin-right: 25px;
+		}
+
 		.nav-link {
 			position: relative;
 			display: inline-block;

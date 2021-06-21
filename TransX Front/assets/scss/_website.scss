@@ -1,51 +1,6 @@
 //homepage
 //banner-section
-.banner {
-	position: relative;
-	color: $color-white;
-	.banner-layout {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		background-image: linear-gradient(
-			to right,
-			rgba(0, 61, 144, .9) 0,
-			rgba(0, 153, 125, .6) 50%,
-			rgba(0, 0, 0, .15) 60%
-		);
-		@media only screen and (min-width: 1200px) {
-			background-image: linear-gradient(
-				to right,
-				rgba(0, 61, 144, .9) 0,
-				rgba(0, 153, 125, .6) 50%,
-				rgba(0, 0, 0, .15) 60%
-			);
-		}
-	}
 
-	.banner-content {
-		height: 850px !important;
-		display: table;
-		width: 100%;
-		.content {
-			position: absolute;
-			padding: 150px 0 120px 0;
-			top: 24%;
-			left:5%;
-
-		}
-		.banner-title {
-			margin-bottom: 25px;
-			font-size: 50px;
-			font-weight: 700;
-			line-height: 60px;
-		}
-		.button {
-		
-			position: absolute;
-		}
-	}
-}
 //about section
 #about {
 	padding: 130px 0 130px 0;
@@ -166,7 +121,8 @@
 //testimonials
 #testimonials {
 	position: relative;
-	padding-bottom: 200px;
+	padding-bottom: 130px;
+	padding-top: 100px;
 	.testimonials-bg-img {
 		position: absolute;
 		top: 0;
@@ -264,6 +220,7 @@
 }
 //partners-section
 .logo-slider {
+	position: relative;
 	.slick-slide {
 		margin: 0 15px;
 	}

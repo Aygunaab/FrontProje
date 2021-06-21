@@ -165,6 +165,9 @@ img {
 //section style class
 .section-style {
 	padding: 130px 0 130px 0;
+	@media only screen and (max-width: 992px) {
+		padding: 70px 0 70px 0;
+	}
 }
 .section-style-two {
 	position: relative;
@@ -205,15 +208,15 @@ img {
 	transition: all .3s;
 }
 .button-style-one {
-	color: #fff;
+	color: $color-white;
 	font-size: 14px;
-	background: #00997d;
+	background: $primary-color;
 	height: 70px;
 	line-height: 70px;
 	min-width: 210px;
 	padding: 0 30px;
 	&:hover {
-		color: #fff;
+		color: $color-white;
 		background: #21bb9f;
 	}
 }
@@ -227,8 +230,8 @@ img {
 	border-radius: 0 0 20px 0;
 	padding: 0 20px;
 	&:hover {
-		color: $color-white !important;
-		background: $primary-color;
+		color: $color-white;
+		background: #21bb9f;
 	}
 }
 .button-border-green {
@@ -401,8 +404,20 @@ img {
 }
 
 //margin class
+.martop-140 {
+	margin-top: 140px !important;
+}
 .martop-100 {
 	margin-top: 100px !important;
+}
+.martop-50 {
+	margin-top: 50px !important;
+	@media (min-width: 992px) {
+		margin-top: 0 !important;
+	}
+}
+.martop-20 {
+	margin-top: 20px !important;
 }
 .marbot-70 {
 	margin-bottom: 50px !important;
@@ -410,8 +425,8 @@ img {
 		margin-bottom: 70px !important;
 	}
 }
-.martop-70 {
-	margin-top: 70px;
+.marbot-40 {
+	margin-bottom: 70px;
 }
 .maroffset-50 {
 	margin-bottom: -50px !important;
@@ -423,6 +438,9 @@ img {
 }
 .right-0 {
 	right: 0;
+}
+#transx-img {
+	padding-top: 130px;
 }
 
 //table
@@ -462,13 +480,30 @@ img {
 
 //burger-btn
 #sidebar-btn {
-	display: inline-block;
+	display: none;
 	vertical-align: middle;
 	width: 30px;
 	height: 15px;
 	cursor: pointer;
 	margin: 38px;
-	top: 0;
+	position: absolute;
+	left: 0;
+
+	@media only screen and (max-width: 992px) {
+		display: inline-block;
+	}
+
+	@media only screen and (min-width: 768px) {
+		left: 0;
+	}
+	@media only screen and (min-width: 576px) {
+		right: 0;
+		left: auto;
+	}
+	@media only screen and (max-width: 576px) {
+		right: 0;
+		left: auto;
+	}
 
 	span {
 		height: 2px;
@@ -581,5 +616,31 @@ img {
 		bottom: 0;
 		left: 0;
 		z-index: -1;
+	}
+}
+.text-bg-blue {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	background-color: #003d90;
+	padding: 15px 20px;
+	margin-bottom: 0;
+	@media only screen and (min-width: 768px) {
+		font-size: 17px;
+		font-weight: 700;
+		padding: 30px 40px 34px 40px;
+	}
+	@media only screen and (min-width: 992px) {
+		padding: 63px 70px 63px 70px;
+	}
+}
+.right {
+	text-align: right;
+}
+.socials-blue {
+	.socials-item {
+		.socials-link {
+			color: $secondary-color !important;
+		}
 	}
 }
