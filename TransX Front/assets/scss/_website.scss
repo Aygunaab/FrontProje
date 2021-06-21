@@ -238,3 +238,51 @@
 .logo-slider-dots {
 	text-align: center;
 }
+//calculator{
+.calculator {
+	.contact-card-blue {
+		margin-top: 70px;
+		@media only screen and (min-width: 992px) {
+			margin-top: 53px;
+		}
+	}
+}
+
+.tx-right{
+	@media only screen and (min-width: 992px) {
+		text-align: right;
+	}
+
+}
+//request
+.request-quote{
+	.form-title{
+margin-bottom: 30px;
+font-weight: 700;
+	}
+	.form-check-input{
+		background: none;
+		background-color: #00997d;
+		height: 15px;
+		width: 15px;
+		border-radius: 0;
+		
+		&:checked{
+			border: 2px solid $primary-color;
+			
+		}
+		&:nth-child(5){
+			border-radius: 350px;
+		}
+		&:nth-child(7){
+			border-radius: 350px;
+		}
+
+		
+
+	}
+	.form-check-label{
+		font-size: 14px ;
+		font-weight: 500;
+	}
+}

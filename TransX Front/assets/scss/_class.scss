@@ -297,6 +297,18 @@ img {
 		color: $color-white;
 	}
 }
+.quote-form-submit{
+	font-size: 13px;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 40px;
+    height: 50px;
+    line-height: 46px;
+    border: 2px solid #00997d;
+    background: 0 0;
+    border-radius: 0 0 25px 0;
+    transition: all .3s;
+}
 //slick-dots
 .slick-dots {
 	display: inline-flex;
@@ -426,7 +438,7 @@ img {
 	}
 }
 .marbot-40 {
-	margin-bottom: 70px;
+	margin-bottom: 50px !important;
 }
 .maroffset-50 {
 	margin-bottom: -50px !important;
@@ -642,5 +654,22 @@ img {
 		.socials-link {
 			color: $secondary-color !important;
 		}
+	}
+}
+.error-text{
+	color:$color-white;
+    font-size: 140px;
+    line-height: .71;
+    font-weight: 700;
+    letter-spacing: -.050em;
+	@media only screen and (min-width: 768px){
+		font-size: 165px;
+	}
+	@media only screen and (min-width: 992px){
+		font-size: 250px;
+	}
+
+	@media only screen and (min-width: 1200px){
+		font-size: 340px;
 	}
 }
