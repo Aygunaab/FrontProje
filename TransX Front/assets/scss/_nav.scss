@@ -143,6 +143,39 @@
 				transition: width .3s;
 			}
 		}
+		.nav-link2 {
+			position: relative;
+			display: inline-block;
+			color: $title-color;
+			font-size: 13px;
+			font-weight: 500;
+			padding: 25px 0 20px 0;
+			text-decoration: none;
+			text-transform: uppercase;
+			&:hover {
+				&::before {
+					width: 70%;
+					background: $primary-color;
+				}
+			}
+			i {
+				margin-left: 10px;
+			}
+			@media only screen and (min-width: 1366px) {
+				padding: 35px 0 30px 0;
+			}
+			&::before {
+				content: "";
+				display: block;
+				height: 2px;
+				width: 0%;
+				background: #00997d;
+				position: absolute;
+				bottom: 3px;
+				left: 0;
+				transition: width .3s;
+			}
+		}
 	}
 }
 //class

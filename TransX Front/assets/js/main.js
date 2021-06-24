@@ -156,3 +156,27 @@ $("#sidebar-btn").click(function(){
 	$(".sidebar").removeClass(".sidebar-inactive");
   });
  
+
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+		$(".nav-link").css({"color":"black"});
+		$('.navbar-top').addClass('d-xl-none');
+		$('.logo-light').addClass('d-none');
+		$(".logo-dark").removeClass("d-none");
+		$('.header-page').addClass('header-page-two');
+		$(".header-page-two").removeClass("header-page");
+		$('.nav-link').addClass('nav-link2');
+		$(".nav-link2").removeClass("nav-link");
+
+        
+    } else {
+        $(".navbar-top").removeClass("d-xl-none");
+		$(".nav-link").css({"color":"#fff"});
+		$('.logo-light').removeClass('d-none');
+		$(".logo-dark").addClass("d-none");
+		$('.header-page-two').addClass('header-page');
+		$(".header-page").removeClass("header-page-two");
+		$(".nav-link2").addClass("nav-link");
+		$('.nav-link').removeClass('nav-link2');
+    }
+});
