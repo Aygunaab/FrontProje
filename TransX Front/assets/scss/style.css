@@ -2888,15 +2888,6 @@ img {
   background: #fff !important;
 }
 
-.navbar-bottom .nav-item-active2 .nav-link {
-  color: #00997d;
-}
-
-.navbar-bottom .nav-item-active2 .nav-link::before {
-  width: 70% !important;
-  background: #00997d !important;
-}
-
 .navbar-bottom .nav-item {
   position: relative;
 }
@@ -2936,6 +2927,7 @@ img {
 
 .navbar-bottom .nav-item .nav-link i {
   margin-left: 10px;
+  font-size: 11px;
 }
 
 @media only screen and (min-width: 1366px) {
@@ -3038,6 +3030,116 @@ img {
   color: #8d9296;
 }
 
+.header-sticky {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  top: 5;
+  left: 0;
+  min-height: 70px;
+  width: 100%;
+  z-index: 5;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-box-shadow: 0 3px 10px 2px #d8dde1;
+          box-shadow: 0 3px 10px 2px #d8dde1;
+}
+
+.header-sticky .burger-menu span {
+  background: #414a53 !important;
+}
+
+.header-sticky .nav-item {
+  position: relative;
+}
+
+.header-sticky .nav-item.nav-item-active .nav-link {
+  color: #00997d;
+}
+
+.header-sticky .nav-item.nav-item-active .nav-link::before {
+  width: 70% !important;
+  background: #00997d !important;
+}
+
+.header-sticky .nav-item:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.header-sticky .nav-item:hover .nav-sub-list {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  visibility: visible;
+}
+
+@media only screen and (min-width: 1200px) {
+  .header-sticky .nav-item {
+    margin-right: 25px;
+  }
+}
+
+.header-sticky .nav-item .nav-link {
+  position: relative;
+  display: inline-block;
+  color: #414a53;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 25px 0 20px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header-sticky .nav-item .nav-link:hover {
+  color: #00997d;
+}
+
+.header-sticky .nav-item .nav-link:hover::before {
+  width: 70%;
+  background: #00997d;
+}
+
+.header-sticky .nav-item .nav-link i {
+  font-size: 11px;
+  margin-left: 10px;
+}
+
+@media only screen and (min-width: 1366px) {
+  .header-sticky .nav-item .nav-link {
+    padding: 35px 0 30px 0;
+  }
+}
+
+.header-sticky .nav-item .nav-link::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: #00997d;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.header-sticky .login {
+  color: #414a53;
+}
+
+.header-sticky .login:hover {
+  color: #00997d;
+}
+
 .header-page-two {
   position: fixed;
   display: -webkit-box;
@@ -3085,9 +3187,201 @@ img {
   background: #414a53 !important;
 }
 
+.header-page-two .nav-item {
+  position: relative;
+}
+
+.header-page-two .nav-item.nav-item-active .nav-link {
+  color: #00997d;
+}
+
+.header-page-two .nav-item.nav-item-active .nav-link::before {
+  width: 70% !important;
+  background: #00997d !important;
+}
+
+.header-page-two .nav-item:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.header-page-two .nav-item:hover .nav-sub-list {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  visibility: visible;
+}
+
+@media only screen and (min-width: 1200px) {
+  .header-page-two .nav-item {
+    margin-right: 25px;
+  }
+}
+
 .header-page-two .nav-item .nav-link {
+  position: relative;
+  display: inline-block;
+  color: #414a53;
   font-size: 13px;
   font-weight: 500;
+  padding: 25px 0 20px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header-page-two .nav-item .nav-link:hover {
+  color: #00997d;
+}
+
+.header-page-two .nav-item .nav-link:hover::before {
+  width: 70%;
+  background: #00997d;
+}
+
+.header-page-two .nav-item .nav-link i {
+  font-size: 11px;
+  font-weight: 900;
+  margin-left: 10px;
+}
+
+@media only screen and (min-width: 1366px) {
+  .header-page-two .nav-item .nav-link {
+    padding: 35px 0 30px 0;
+  }
+}
+
+.header-page-two .nav-item .nav-link::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: #00997d;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.header-page-two .login {
+  color: #414a53;
+}
+
+.header-page-two .login:hover {
+  color: #414a53;
+}
+
+@media only screen and (max-width: 992px) {
+  .header-page-two .login {
+    margin-right: 50px;
+    margin-top: 0;
+  }
+}
+
+.modal-header-title {
+  font-size: 50px;
+  text-align: center;
+  margin: 0 0 20px 0;
+  font-weight: 800;
+  color: #00997d;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.social-login ul {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.social-login ul li {
+  display: inline-block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  width: 50%;
+  list-style: none;
+  padding: 0 10px;
+}
+
+.social-login ul li a.btn {
+  width: 100%;
+  border-radius: 5px;
+  padding: 20px 0;
+  color: #fff;
+  background: #f4f5f7;
+}
+
+.social-login ul li a.btn.connect-fb {
+  background: #3b5998;
+}
+
+.social-login ul li a.btn.connect-google {
+  background: #00997d;
+}
+
+.modal-divider {
+  position: relative;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.modal-divider span {
+  position: relative;
+  background: #fff;
+  padding: 0 20px;
+}
+
+.modal-divider::before {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #e1e5f2;
+}
+
+.close-btn {
+  text-align: right;
+  font-size: 30px;
+  padding: 10px 20px 0 0;
+  color: #00997d;
+}
+
+.input-with-icon {
+  position: relative;
+  width: 100%;
+}
+
+form label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #003d90;
+}
+
+.login {
+  margin: 0 10px 0 0;
+  font-size: 20px;
+  padding: 19px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 992px) {
+  .login {
+    margin-right: 50px;
+    margin-top: 10px;
+  }
+}
+
+.login:hover {
+  color: #fff;
 }
 
 #about {

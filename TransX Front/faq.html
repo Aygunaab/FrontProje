@@ -133,7 +133,7 @@
         <header class="header-page-two navbar-bottom">
             <div class="container-fluid">
                 <div class="row align-items-center">
-                    <div class="col-8 col-md-6 col-lg-3 d-flex align-items-center">
+                    <div class="col-8 col-md-6 col-lg-2 d-flex align-items-center">
                         <!-- menu-sidebar start-->
                         <div id="sidebar-btn" class="burger-menu">
                             <span></span>
@@ -144,10 +144,10 @@
                         <div class="logo mt-0"><a href="index.html"><img src="/assets/img/logo_black.png"
                                     alt="logo"></a></div>
                     </div>
-                    <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+                    <div class="col-lg-6 d-none d-lg-flex justify-content-center">
                         <!-- main menu start-->
                         <ul class="nav ">
-                            <li class="nav-item nav-item-active"><a class="nav-link" href="#"><span>Home</span><i
+                            <li class="nav-item "><a class="nav-link" href="#"><span>Home</span><i
                                         class="fas fa-chevron-down"></i></a>
                                 <!-- sub menu start-->
                                 <ul class="nav-sub-list">
@@ -160,7 +160,7 @@
                                 </ul>
                                 <!-- sub menu end-->
                             </li>
-                            <li class="nav-item "><a class="nav-link" href="#"><span>Pages</span><i
+                            <li class="nav-item nav-item-active  "><a class="nav-link" href="#"><span>Pages</span><i
                                         class="fas fa-chevron-down"></i></a>
                                 <!-- sub menu start-->
                                 <ul class="nav-sub-list">
@@ -195,7 +195,7 @@
                                     <li><a href="blog.html"><span>Blog</span></a></li>
                                     <li><a href="blog.html"><span>Blog</span></a></li>
                                     <li><a href="blog.html"><span>Blog</span></a></li>
-
+        
                                 </ul>
                                 <!-- sub menu end-->
                             </li>
@@ -209,15 +209,16 @@
                                 </ul>
                                 <!-- sub menu end-->
                             </li>
-
+                            <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign up</a></li>
+        
                         </ul>
                         <!-- main menu end-->
                     </div>
                     <div class="col-4 col-md-6 col-lg-4 d-flex justify-content-end text-align-center">
-                        <div class="justify-content-end button">
-                            <a href="#"><button type="button" class="btn button-style-one d-md-none d-lg-block ">Get a
+                        <a href="#"><button type="button" class="btn login " data-bs-toggle="modal" data-bs-target="#staticBackdrop" ><i class="fa fa-user" ></i></button></a>
+                            <a href="#"><button type="button" class="btn button-style-one d-none d-lg-block ">Get a
                                     Quote</button></a>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -510,7 +511,143 @@
                 </div>
             </div>
         </footer>
+    <!--Sign up modal start -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg ">
+      <div class="modal-content">
+        <div class="close-btn "><i class="fas fa-times"data-bs-dismiss="modal" ></i> </div>
+        <div class="modal-body">
+            <h4 class="modal-header-title">Sign Up</h4>
+            <div class="login-form">
+                <form>
+                   <div class="row">
+                           <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <div class="input-with-icon">
+                                    <input type="text" class="form-control form-input" placeholder="Full Name">
+                                    <i class="ti-user"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <div class="input-with-icon">
+                                    <input type="email" class="form-control form-input" placeholder="Email">
+                                    <i class="ti-email"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <div class="input-with-icon">
+                                    <input type="text" class="form-control form-input" placeholder="Username">
+                                    <i class="ti-user"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <div class="input-with-icon">
+                                    <input type="password" class=" form-control form-input" placeholder="*******">
+                                    <i class="ti-unlock"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <div class="input-with-icon">
+                                    <input type="password" class=" form-control form-input" placeholder="123 546 5847">
+                                    <i class="lni-phone-handset"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <div class="input-with-icon">
+                                    <select class=" form-control form-input">
+                                        <option>As a Customer</option>
+                                        <option>As a Agent</option>
+                                        <option>As a Agency</option>
+                                    </select>
+                                    <i class="ti-briefcase"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-12">
+                        <button class="quote-form-submit mb-5" type="submit">Sign up</button>
+                    </div>
+                
+                </form>
+            </div>
+            <div class="modal-divider"><span>Or login via</span></div>
+            <div class="social-login mb-3">
+                <ul>
+                    <li><a href="#" class="btn connect-fb"><i class="ti-facebook"></i>Facebook</a></li>
+                    <li><a href="#" class="btn connect-google"><i class="ti-google"></i>Google+</a></li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <p class="mt-5"><i class="ti-user mr-1"></i>Already Have An Account? <a href="#" class="link">Go For LogIn</a></p>
+            </div>
+        </div>
+      </div>
     </div>
+  </div>
+ <!--sign up modal end-->
+<!--login modal-start-->  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="close-btn "><i class="fas fa-times" data-bs-dismiss="modal" aria-hidden="true"></i> </div>
+        <div class="modal-body">
+            <h4 class="modal-header-title">Log In</h4>
+            <div class="login-form">
+                <form> 
+                    <div class="form-group">
+                        <label>User Name</label>
+                        <div class="input-with-icon">
+                            <input type="text" class="form-control form-input" placeholder="Username">
+                            <i class="ti-user"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Password</label>
+                        <div class="input-with-icon">
+                            <input type="password" class="form-control form-input" placeholder="*******">
+                            <i class="ti-unlock"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button class="quote-form-submit mb-5" type="submit">Sign up</button>
+                    </div>
+                
+                </form>
+            </div>
+            <div class="modal-divider"><span>Or login via</span></div>
+            <div class="social-login mb-3">
+                <ul>
+                    <li><a href="#" class="btn connect-fb"><i class="ti-facebook"></i>Facebook</a></li>
+                    <li><a href="#" class="btn connect-google"><i class="ti-google"></i>Google+</a></li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <p class="mt-5"><a href="#" class="link">Forgot password?</a></p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
