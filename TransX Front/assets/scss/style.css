@@ -1995,6 +1995,12 @@ img {
   margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 768px) {
+  .title-style-one title {
+    font-size: 25px !important;
+  }
+}
+
 .title-style-one .pre-title {
   display: inline-block;
   color: #a9aeb3;

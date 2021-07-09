@@ -357,6 +357,11 @@ img {
 .title-style-one {
 	position: relative;
 	margin-bottom: 20px;
+	title{
+		@media only screen and (max-width: 768px){
+			font-size: 25px !important;
+				}
+	}
 	.pre-title {
 		display: inline-block;
 		color: #a9aeb3;
